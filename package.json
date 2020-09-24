@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "description": "nodejsdemo,the nodejs demo project.",
   "main": "helloworld.js",
+  "bin": {
+    "nodejsdemo": ""
+  },
+  "directories": {
+    "bin": "",
+    "lib": "",
+    "example": ""
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +19,34 @@
     "nodejs",
     "demo"
   ],
-  "author": "LC",
+  "homepage": "https://gitee.com/ahviplc/nodejsdemo",
+  "bugs": {
+    "url": "https://gitee.com/ahviplc/nodejsdemo/issues"
+  },
+  "author": {
+    "name": "LC",
+    "email": "ahlc@sina.cn",
+    "url": "https://gitee.com/ahviplc"
+  },
+  "contributors": [
+    {
+      "name": "LC",
+      "email": "ahlc@sina.cn",
+      "url": "https://gitee.com/ahviplc"
+    },
+    {
+      "name": "LC",
+      "email": "ahlc@sina.cn",
+      "url": "https://github.com/ahviplc"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@gitee.com:ahviplc/nodejsdemo.git"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
