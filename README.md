@@ -12,6 +12,13 @@ GitHub - alsotang/node-lessons: 《Node.js 包教不包会》 by alsotang
 mumuy/relationship: Chinese kinship system.中国亲戚关系计算器 - 家庭称谓/称呼计算/亲戚关系算法  
 > https://github.com/mumuy/relationship
 
+# 安装依赖
+```markdown
+1. cd nodejsdemo
+2. npm install
+3. enjoy it.
+```
+
 # gitee
 ahviplc/nodejsdemo  
 > https://gitee.com/ahviplc/nodejsdemo
