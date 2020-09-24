@@ -15,3 +15,11 @@ mumuy/relationship: Chinese kinship system.中国亲戚关系计算器 - 家庭�
 # gitee
 ahviplc/nodejsdemo  
 > https://gitee.com/ahviplc/nodejsdemo
+
+# 其他
+
+## nodejs 其他相关库 
+
+vscodeku/nodejsKu at master · ahviplc/vscodeku · GitHub   
+> https://github.com/ahviplc/vscodeku/tree/master/nodejsKu 
+
