@@ -9,7 +9,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "express": "^4.17.1",
+    "utility": "^1.16.3"
+  },
   "devDependencies": {
     "relationship.js": "^1.0.0"
   }
