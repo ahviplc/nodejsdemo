@@ -32,4 +32,15 @@ console.log(utils.unescape('&lt;script/&gt;&quot;&amp; &amp;amp;')); // '<script
 // Safe encodeURIComponent and decodeURIComponent
 console.log(utils.decodeURIComponent(utils.encodeURIComponent('你好, nodejs')));
 console.log("---------------------------------------------------------------------")
-require("")
+
+// os
+// os | Node.js API 文档
+// http://nodejs.cn/api/os.html#os_os
+
+var os_utils = require("os");
+console.log(os_utils.cpus())
+console.log("---------------------------------------------------------------------")
+console.log(os_utils.type())
+console.log(os_utils.homedir())
+console.log(os_utils.arch())
+console.log("---------------------------------------------------------------------")
