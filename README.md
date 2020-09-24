@@ -16,6 +16,9 @@ mumuy/relationship: Chinese kinship system.中国亲戚关系计算器 - 家庭�
 ```markdown
 1. cd nodejsdemo
 2. npm install
+   npm i
+   cnpm install
+   cnpm i
 3. enjoy it.
 ```
 
