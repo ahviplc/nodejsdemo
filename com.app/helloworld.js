@@ -90,9 +90,15 @@ console.log(config.whoru_desc) // 自定义工具类BY LC.
 console.log(config.whoru_author) // LC
 console.log(config.version) // 0.1.0
 console.log("---------------------------------------------------------------------")
-// 单独暴露方法
+// 单独暴露方法 使用 module.exports
 // 引入greet模块
 var greet = require('./utils/greet');
 const ToName = 'LC5';
 greet(ToName); // ---打招呼 greet--- , LC5!
+console.log("---------------------------------------------------------------------")
+// 单独暴露方法 2 使用 exports
+// md5
+var m = require('./utils/md5');
+const outData = m.md5('admin')
+console.log(outData)
 console.log("---------------------------------------------------------------------")

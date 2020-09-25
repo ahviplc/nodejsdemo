@@ -4,7 +4,7 @@
 // learn-javascript/samples/node/module at master · michaelliao/learn-javascript · GitHub
 // https://github.com/michaelliao/learn-javascript/tree/master/samples/node/module
 
-// 只是暴露一个方法
+// 只是暴露一个方法 使用 module.exports
 function greet(name) {
     console.log('---打招呼 greet--- ' + ', ' + name + '!');
 }
