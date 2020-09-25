@@ -25,6 +25,9 @@ axios.get('http://httpbin.org/get?ID=12345')
     .then(function () {
         // always executed
         console.log("then1================================================================================");
+    })
+    .finally(function () {
+        console.log("finally1================================================================================");
     });
 
 console.log("================================================================================");
@@ -104,3 +107,23 @@ axios({
 }).catch(function (error) {
     console.log(error);
 });
+
+// Send a POST request 2
+const axiosapp = axios({
+    method: 'get',
+    url: 'http://lmtplat.flowmetek.com.cn/rest/v1/test',
+    data: {
+        // firstName: 'Fred2',
+        // lastName: 'Flintstone2'
+    }
+}).then(function (response) {
+    // console.log(response);
+    console.log(response.data);
+    console.log("then5================================================================================");
+}).catch(function (error) {
+    console.log(error);
+});
+// finally总会执行
+axiosapp.finally(function () {
+    console.log("finally5================================================================================");
+})

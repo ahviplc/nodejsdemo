@@ -102,3 +102,43 @@ var m = require('./utils/md5');
 const outData = m.md5('admin')
 console.log(outData) // 21232f297a57a5a743894a0e4a801fc3
 console.log("---------------------------------------------------------------------")
+
+// request 自定义封装的axios请求模块 含有request response拦截器
+const request = require("./utils/request"); // 返回的是axios实例 = axiosInstance 起名叫 request
+// lmtplat测试api http://lmtplat.flowmetek.com.cn/rest/v1/test
+// 异步result 可使用 【.then】【.catch】【.finally】
+// Promise 对象代表了未来将要发生的事件，用来传递异步操作的消息
+const result = request({
+    method: 'GET',
+    url: '/rest/v1/test'
+}).then(function (response) {
+    console.log(response.data);
+}).catch(function (error) {
+    // handle error
+    console.log("有error了 " + error); // 类似输出:有error了 TypeError: Cannot read property 'data' of undefined
+}).finally(function () {
+    console.log("finally1")
+});
+result.finally(function () {
+    console.log("finally2")
+    console.log(result) // Promise { undefined }
+    console.log("---------------------------------------------------------------------")
+})
+console.log(result) // Promise { <pending> }
+
+console.log("---------------------------------------------------------------------")
+// lmtplat测试api http://lmtplat.flowmetek.com.cn/api/t1
+const result2 = request({
+    method: 'GET',
+    url: '/api/t1'
+}).then(function (response) {
+    console.log(response.data);
+}).catch(function (error) {
+    // handle error
+    console.log("有error了 " + error); // 类似输出:有error了 TypeError: Cannot read property 'data' of undefined
+}).finally(function () {
+    console.log("finally3")
+    console.log("---------------------------------------------------------------------")
+});
+console.log("---------------------------------------------------------------------")
+
