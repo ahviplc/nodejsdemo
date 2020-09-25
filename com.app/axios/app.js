@@ -108,7 +108,7 @@ axios({
     console.log(error);
 });
 
-// Send a POST request 2
+// Send a Get request
 const axiosapp = axios({
     method: 'get',
     url: 'http://lmtplat.flowmetek.com.cn/rest/v1/test',

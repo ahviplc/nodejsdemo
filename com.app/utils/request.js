@@ -5,7 +5,7 @@
 // src/api/user.js · lipengzhou/toutiao-publish-admin - 码云 - 开源中国
 // https://gitee.com/lipengzhou/toutiao-publish-admin/blob/master/src/api/user.js
 
-// Send a POST request 3
+// request.js - 对 axios实例 axiosInstance的封装
 // 创建一个 axios 实例，说白了就是复制了一个 axios
 // 我们通过这个实例去发请求，把需要的配置配置给这个实例来处理
 
