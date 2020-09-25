@@ -100,5 +100,5 @@ console.log("-------------------------------------------------------------------
 // md5
 var m = require('./utils/md5');
 const outData = m.md5('admin')
-console.log(outData)
+console.log(outData) // 21232f297a57a5a743894a0e4a801fc3
 console.log("---------------------------------------------------------------------")
