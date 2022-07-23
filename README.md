@@ -40,6 +40,12 @@ https://segmentfault.com/q/1010000023241921
 
 使用Axios来设置请求头（headers）的方法_墨语轩的博客-CSDN博客_axios设置headers
 https://blog.csdn.net/MFWSCQ/article/details/125547207
+
+GitHub - yagop/node-telegram-bot-api: Telegram Bot API for NodeJS
+https://github.com/yagop/node-telegram-bot-api
+
+Error: cannot enable cancellation after promises are in use · Issue #319 · yagop/node-telegram-bot-api · GitHub
+https://github.com/yagop/node-telegram-bot-api/issues/319
 ```
 
 # 安装依赖
@@ -66,6 +72,10 @@ ahviplc/nodejsdemo
 > https://gitee.com/ahviplc/nodejsdemo
 
 # 其他
+
+## 小说明
+
+* 在`com.app/use-node-telegram-bot-api/telegram.js:282` 我新增了代理配置项
 
 > Never Give Up...
 
