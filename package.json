@@ -51,6 +51,7 @@
   "dependencies": {
     "axios": "^0.20.0",
     "express": "^4.17.1",
+    "socks-proxy-agent": "^7.0.0",
     "utility": "^1.16.3"
   },
   "devDependencies": {
