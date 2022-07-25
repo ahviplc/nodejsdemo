@@ -5,7 +5,7 @@ let this_obj = {}
 
 // axios get请求再封装
 // this_url 请求的url
-// this_config 一些配置项 get请求中可配置 => 请求头 header 此get的请求参数 params 设置代理 proxy等
+// this_config 一些配置项 get请求中可配置 => 请求头 headers 此get的请求参数 params 设置代理 proxy等
 exports.get_with_axios = async function get_with_axios(this_url, this_config) {
     await axios.get(this_url, this_config)
         .then(res => {
@@ -29,7 +29,7 @@ exports.get_with_axios = async function get_with_axios(this_url, this_config) {
 
 // axios post请求再封装
 // this_url 请求的url
-// this_config 一些配置项 get请求中可配置 => 请求头 header 此post的请求数据 data 设置代理 proxy等
+// this_config 一些配置项 get请求中可配置 => 请求头 headers 此post的请求数据 data 设置代理 proxy等
 exports.post_with_axios = async function post_with_axios(this_url, this_config) {
     await axios.post(this_url, this_config.data, this_config)
         .then(res => {

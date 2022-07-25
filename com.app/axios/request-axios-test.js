@@ -9,7 +9,8 @@ const req_axios = require('../utils/request-axios');
 let this_config_for_get = {
     // 请求头
     headers: {
-        "LCLCL": "123"
+        "LCLCLC": "123",
+        my_lc_token:"123",
     },
     params: {
         "getparams1": "getparams1",
@@ -26,7 +27,8 @@ let this_config_for_get = {
 let this_config_for_post = {
     // 请求头
     headers: {
-        "LCLCL": "123"
+        "LCLCLC": "456",
+        my_lc_token:"456",
     },
     data: {
         "postparams1": "postparams1",
