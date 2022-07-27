@@ -1,8 +1,10 @@
 const TelegramBot = require('node-telegram-bot-api');
 
 // replace the value below with the Telegram token you receive from @BotFather
+// https://api.telegram.org/bot<token>/getUpdates
 const token = 'this is your token,write it here';
 // 这里使用时 请改成你真实的 telegram id 也就是 chatId
+// https://api.telegram.org/bot<token>/getchat?chat_id='this is your chat_id'
 const this_is_your_chatId = 123456789;
 
 // Create a bot that uses 'polling' to fetch new updates
@@ -35,16 +37,23 @@ bot.on('message', (msg) => {
     console.log("===message===");
     console.log("message", chatId);
     console.log("===message===");
-    // send a message to the chat acknowledging receipt of their message
-    bot.sendMessage(chatId, 'Received your message');
+    // 接受的指令 判断与回复 【/test】
+    if (msg.text === '/test' || msg.text === '/test@PushAnythingBot') {
+        // send a message to the chat acknowledging receipt of their message
+        bot.sendMessage(chatId, 'test一下');
+    } else {
+        // send a message to the chat acknowledging receipt of their message
+        bot.sendMessage(chatId, 'Received your message');
+    }
 });
 
 // 直接发生消息
 // 这里需要用你的 telegram id 发送消息
 // this_is_your_chatId 这是你的telegram id
 // this_send_content 这是你的发送内容
-const this_send_content = "Hello LC from node app"
-bot.sendMessage(this_is_your_chatId, this_send_content);
+// 已测试 可用
+// const this_send_content = "Hello LC from node app"
+// bot.sendMessage(this_is_your_chatId, this_send_content);
 
 // 输出样例
 // ===message===
