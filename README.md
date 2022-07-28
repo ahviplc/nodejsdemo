@@ -41,11 +41,32 @@ https://segmentfault.com/q/1010000023241921
 使用Axios来设置请求头（headers）的方法_墨语轩的博客-CSDN博客_axios设置headers
 https://blog.csdn.net/MFWSCQ/article/details/125547207
 
+Telegram Messenger
+https://www.telegram.org/
+
+Telegram APIs
+https://core.telegram.org/api
+
 GitHub - yagop/node-telegram-bot-api: Telegram Bot API for NodeJS
 https://github.com/yagop/node-telegram-bot-api
 
 Error: cannot enable cancellation after promises are in use · Issue #319 · yagop/node-telegram-bot-api · GitHub
 https://github.com/yagop/node-telegram-bot-api/issues/319
+
+telegraf.js - v4.8.5
+https://telegraf.js.org/
+
+GitHub - telegraf/telegraf: Modern Telegram Bot Framework for Node.js
+https://github.com/telegraf/telegraf
+
+Node-Fetch设置httphttps代理发送请求示例 - 百度文库 - 从这拿到的灵感 但是不好使
+https://wenku.baidu.com/view/2ee196ed2fc58bd63186bceb19e8b8f67c1cefe0.html
+
+http-proxy-agent - npm
+https://www.npmjs.com/package/http-proxy-agent
+
+GitHub - TooTallNate/node-http-proxy-agent: An HTTP(s) proxy `http.Agent` implementation for HTTP endpoints
+https://github.com/TooTallNate/node-http-proxy-agent
 ```
 
 # 安装依赖
@@ -72,6 +93,30 @@ ahviplc/nodejsdemo
 > https://gitee.com/ahviplc/nodejsdemo
 
 # 其他
+
+```markdown
+在
+node_modules/telegraf/lib/core/network/client.js:252
+加入
+========================================================
+// 完善 agent下的proxy
+config.secureProxy = false,
+config.agent.proxy = {
+protocol: 'http:',
+slashes: true,
+auth: null,
+host: '192.168.192.192',
+port: 7893,
+hostname: '192.168.192.192',
+hash: null,
+search: null,
+query: null,
+href: 'http://192.168.192.192:7893/'
+}
+========================================================
+失败
+
+```
 
 ## 小说明
 
