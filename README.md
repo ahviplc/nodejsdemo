@@ -129,7 +129,7 @@ href: 'http://192.168.192.192:7893/'
 ## 小说明
 
 * 在`com.app/use-node-telegram-bot-api/telegram.js:282` 我新增了代理配置项
-  * 使用 ` npm install pm2 --save-dev` 安装了 pm2 使用 `npx` 运行 `npx pm2 start .\com.app\use-pm2\app.js` | `npx pm2 ls` | `npx pm2 stop 0` | ` npx pm2 stop all` |  `npx pm2 log app --lines 10`
+* 使用 ` npm install pm2 --save-dev` 安装了 pm2 使用 `npx` 运行 `npx pm2 start .\com.app\use-pm2\app.js` | `npx pm2 ls` | `npx pm2 stop 0` | ` npx pm2 stop all` |  `npx pm2 log app --lines 10`
 
 > Never Give Up...
 
