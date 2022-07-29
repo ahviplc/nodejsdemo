@@ -67,6 +67,12 @@ https://www.npmjs.com/package/http-proxy-agent
 
 GitHub - TooTallNate/node-http-proxy-agent: An HTTP(s) proxy `http.Agent` implementation for HTTP endpoints
 https://github.com/TooTallNate/node-http-proxy-agent
+
+PM2 - Home
+https://pm2.keymetrics.io/
+
+GitHub - Unitech/pm2: Node.js Production Process Manager with a built-in Load Balancer.
+https://github.com/Unitech/pm2
 ```
 
 # 安装依赖
@@ -93,6 +99,8 @@ ahviplc/nodejsdemo
 > https://gitee.com/ahviplc/nodejsdemo
 
 # 其他
+
+## 小记录
 
 ```markdown
 在
@@ -121,6 +129,7 @@ href: 'http://192.168.192.192:7893/'
 ## 小说明
 
 * 在`com.app/use-node-telegram-bot-api/telegram.js:282` 我新增了代理配置项
+  * 使用 ` npm install pm2 --save-dev` 安装了 pm2 使用 `npx` 运行 `npx pm2 start .\com.app\use-pm2\app.js` | `npx pm2 ls` | `npx pm2 stop 0` | ` npx pm2 stop all` |  `npx pm2 log app --lines 10`
 
 > Never Give Up...
 

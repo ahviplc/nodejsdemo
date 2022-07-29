@@ -58,6 +58,7 @@
     "utility": "^1.16.3"
   },
   "devDependencies": {
+    "pm2": "^5.2.0",
     "relationship.js": "^1.0.0"
   }
 }
