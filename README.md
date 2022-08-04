@@ -73,6 +73,15 @@ https://pm2.keymetrics.io/
 
 GitHub - Unitech/pm2: Node.js Production Process Manager with a built-in Load Balancer.
 https://github.com/Unitech/pm2
+
+Get started | Socket.IO
+https://socket.io/get-started/chat#getting-this-example
+
+GitHub - socketio/chat-example: Basic chat example with Socket.IO
+https://github.com/socketio/chat-example
+
+Server API | Socket.IO
+https://socket.io/docs/v4/server-api/#socketid
 ```
 
 # 安装依赖

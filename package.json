@@ -53,6 +53,7 @@
     "express": "^4.17.1",
     "http-proxy-agent": "^5.0.0",
     "node-telegram-bot-api": "^0.58.0",
+    "socket.io": "^4.5.1",
     "socks-proxy-agent": "^7.0.0",
     "telegraf": "^4.8.6",
     "utility": "^1.16.3"
