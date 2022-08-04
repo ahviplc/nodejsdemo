@@ -54,7 +54,8 @@
         console.log("connect socket.connected => ", socket.connected); // true
     });
 
-    socket.on('disconnect', function () {
+    socket.on('disconnect', function (reason) {
+        console.log("disconnect reason", reason);
         console.log("disconnect");
         console.log("disconnect socket.connected => ", socket.connected); // true
     });
