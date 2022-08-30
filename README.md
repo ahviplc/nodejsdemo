@@ -106,7 +106,7 @@ node com.app/use-telegram-api-with-node-socks-proxy/app.js
 
 > https://github.com/ahviplc/nodejsdemo
 
-ahviplc/nodejsdemo  
+ahviplc/nodejsdemo
 > https://gitee.com/ahviplc/nodejsdemo
 
 # 其他
