@@ -19,7 +19,7 @@ const cheerio = require("cheerio");
 //     });
 
 // 写法1 好用
-// 上海交通卡
+// 上海交通卡 余额查询 | 通过解析查询余额html页面的方式 | 因为大部分免费接口都失效了
 // axios.get('https://card.whutech.com/balance/sha/18800868031.html', {
 //     headers: {
 //         // 这个需要 cookie
@@ -38,8 +38,9 @@ const cheerio = require("cheerio");
 //         console.log(error);
 //     });
 
-// 写法2好用
-// 上海交通卡
+// 目前在nodered中 使用的就是这个写法
+// 写法2 好用
+// 上海交通卡 余额查询 | 通过解析查询余额html页面的方式 | 因为大部分免费接口都失效了
 //import * as req_axios from '../utils/request-axios'
 const req_axios = require('../utils/request-axios');
 
@@ -81,7 +82,7 @@ const app = async () => {
     const cardno = $('.cardno');
     // 余额
     const balance = $('.balance-val');
-    // lastdate | update为数据最后更新时间
+    // lastdate | update 为数据最后更新时间
     // :first 代表 如果有多个 则 取第一个
     const lastdate =  $('.weui-cells__title:first');
 
