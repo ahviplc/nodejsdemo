@@ -50,6 +50,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.20.0",
+    "cheerio": "^1.0.0-rc.12",
     "express": "^4.17.1",
     "http-proxy-agent": "^5.0.0",
     "node-telegram-bot-api": "^0.58.0",
